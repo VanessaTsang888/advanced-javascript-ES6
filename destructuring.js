@@ -185,3 +185,19 @@ let {
     e
   ] = []
 } = foo() || {});
+
+/*
+Destructuring and Functions Parameters:
+Functions that have that takes 3 or more arguments, switch it to an object destructuring so that people can name their arguements instead.
+
+*/
+
+function foo( {a, b, c} = {} ) {
+  console.log(a, b, c);
+}
+
+foo( {
+    a: 1,
+    b: 2,
+    c: 3
+});
