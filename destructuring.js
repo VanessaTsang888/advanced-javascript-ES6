@@ -116,4 +116,72 @@ let {
   a = 10,
   b: X = 42,
   c
-} = foo() || {}; // Must return something that is an object case something falsey came back.
+} = foo() || {}; // Provide a default as must return something that is an object case something falsey came back.
+
+/*
+Nested Object Destructuring:
+we can do nested object destructuring as we can do nested array destructuring
+
+
+*/
+
+function foo() {
+  return { a:1, b:2, c:3,
+      d: {
+          e: 4 // 'e' variable assigned to value of 4.
+      }
+     };
+}
+// 'd' -> now instead of lexical variable for it to be targeted at, now need a destructuring pattern for it to be targeted at using a set of braces
+// Can't do it with arrays but with objects we can account for variable 'd' a number of times: we can multiple account for a property.
+// If we try to destructure an undefined structure/value we will get an exception case. Therefore, we need a provide a default
+let {
+  a = 10,
+  b: X = 42,
+  c,
+  d: X,
+  d: Z,
+  d: { // start of destructuring pattern
+    e
+  } = {} // Empty object to be destructured used as the source of the destructuring. The value to be destructured.
+} = foo() || {};
+
+// If we try to destructure an undefined structure/value we will get an exception case. Therefore, we need a provide a default
+let {
+  a = 10,
+  b: X = 42,
+  c,
+  d: X,
+  d: Z,
+  d: { 
+    e
+  } = {} // provide a default incase of a undefined value -> if 'd' don't exist.
+} = foo() || {};
+
+// A pattern that comes from some value somewhere, 8:10
+// { a: X  = 2 } = ..
+
+// We can do an array inside of an object:
+
+let {
+  a = 10,
+  b: X = 42,
+  c,
+  d: X,
+  d: Z,
+  d: [ 
+    e
+  ] = [] // if you want a hard failure then leave off this default but most of the time we don't want this. Get a linter rule to force this in everytime.
+} = foo() || {};
+
+// This is an object destructuring not a block lable: use a pair of parenthise:
+({
+  a = 10,
+  b: X = 42,
+  c,
+  d: X,
+  d: Z,
+  d: [ 
+    e
+  ] = []
+} = foo() || {});
