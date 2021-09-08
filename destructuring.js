@@ -33,10 +33,10 @@ function foo() {
   return [1, 2, 3];
 }
 
-let tmp = foo();
-let a = tmp[0];
-let b = tmp[1];
-let c = tmp[2];
+var tmp = foo();
+var a = tmp[0];
+var b = tmp[1];
+var c = tmp[2];
 
 /* A declarative form of this destructing assignment;
  Array destructuring:
@@ -64,7 +64,56 @@ function foo() {
  make these assignments.
 
 */
-
 let [a, b, c] = foo();
 
-let [a, b, c] = foo();
+/*
+Object Destructuring:
+
+*/
+
+// ES5 Version:
+
+function foo() {
+  return { a:1, b:2, c:3};
+}
+
+var temp = foo();
+var a = tmp.a;
+var b = tmp.b ! == undefined ? tmp.b : 42;
+var c = tmp.c;
+
+// ES6 Version: Object Pattern:
+// I want the a property to be targeted to ..
+// 1:06
+function foo() {
+  return { a:1, b:2, c:3};
+}
+// Go get the property of name 'a' and assign it to a lexical variable called 'a'.
+// With Object literals, the property name is always on the left, with Object destructuring the property name is always on the left.
+
+let {
+  a: a,
+  b: b,
+  c: c
+} = foo();
+
+// Where target and source are the same, we don't need to do any alias or renaming, we don't need to specify them twice.
+let {
+  a,
+  b,
+  c
+} = foo();
+
+// We can reassign a property to a different variable called 'X':
+// Now the 'X' is the target not the source.
+// Can have default value assignments, i.e. a = 10,
+// If we return something that is not an Object, could get failure here. So put a guard here: empty object to be destrucutred
+// If our pattern don't account for a property, that property just doesn't get worried about.
+// If our patter accounts for a property that don't exist, we end up getting a variable that's just undefined as we accessed the 'd' on an object
+// and it didn't have one.
+
+let {
+  a = 10,
+  b: X = 42,
+  c
+} = foo() || {}; // Must return something that is an object case something falsey came back.
