@@ -172,6 +172,16 @@ alert(counter()); // 2
 
 // We are calling the counter by writing this: counter() because the makeCounter function is stored inside of the counter variable.
 
+/* 
+
+The makeCounter() function is returning a function (on line 4).  This is an anonymous function inside the makeCounter function. 
+This anonymous function is also a closure because it is aware of the counter variable which is declared outside of it. 
+
+counter is an actual function.  The anonymous function returned by makeCounter is stored in counter. 
+We can invoke makeCounter any number of times and create more counter functions.  Each of these will have their own counter value.
+
+*/
+
 /*
 https://app.pluralsight.com/guides/javascript-closures
 JavaScript Closures:
