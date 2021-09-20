@@ -3,9 +3,9 @@ My Path: target for this year 2021 is to learn and be comfortable with the follo
 1. Value vs. Reference Variable Assignment
 2. Closures
 3. Destructuring
-4. Spread Syntax (The Spread Operator)
-5. Rest Syntax (rest parameters)
-6. Array Methods
+4. Spread Syntax/Operator: the '...' appears on the right-hand side of an assignment to expand an array into a list of elements.
+5. Rest Syntax (rest parameters) and rest operator.
+6. Array Methods (filter, map, reduce, sort)
 7. Promises
 8. Async Await.
 
@@ -16,8 +16,11 @@ RESOURCES:
 
 2. Closures:
    Exercism: https://exercism.org/tracks/javascript/concepts/closures
+   https://app.pluralsight.com/guides/javascript-closures
 
 3. Destructuring:
+   Guided Project on Coursera: Modern JavaScript: ES6 Basics
+   Part of this project is destructuring.
    MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
    Exercism: https://exercism.org/tracks/javascript/concepts/array-destructuring
 
@@ -26,7 +29,6 @@ RESOURCES:
 
    Rest and Spread: https://exercism.org/tracks/javascript/concepts/rest-and-spread
 
-   JavaScript Arrays and Collections:
    https://app.pluralsight.com/library/courses/javascript-arrays-collections/table-of-contents
 
    Course Overview.
@@ -36,6 +38,7 @@ RESOURCES:
    Creating and Using Maps ->
 
 5. Array Methods:
+   Guided Project on Coursera: Learn Javascript - 21 Essential Array Methods
    MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#instance_methods
 
    Array Methods:

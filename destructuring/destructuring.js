@@ -12,7 +12,6 @@ The best of CoffeeScript made it into ES6.
 
 ARRAY DESTRUCTURING:
 
-
 */
 
 /* 
@@ -65,6 +64,30 @@ function foo() {
 
 */
 let [a, b, c] = foo();
+
+/*
+Destructuring and Default Value:
+
+Define a default value in case we don't get back anything so we don't need to do the undefined checking stuff which is long winded.
+Just add a value to a variable to give it a default value:
+
+*/
+
+function foo() {
+  return[1];
+}
+
+let [a, b = 42, c] = foo(); // I've given variable 'b' a default value.
+
+
+
+/*
+Dumping Variables:
+
+
+*/
+
+
 
 /*
 Object Destructuring:
@@ -201,6 +224,8 @@ foo( {
     b: 2,
     c: 3
 });
+
+
 
 /*
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment

@@ -1,0 +1,7 @@
+/*
+
+JavaScript Arrays and Collections by Jeff Batt.
+
+
+
+*/
