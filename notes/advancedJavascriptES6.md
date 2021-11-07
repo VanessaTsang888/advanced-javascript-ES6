@@ -59,12 +59,15 @@ RESOURCES:
 6. Promises:
    Exercism: https://exercism.org/tracks/javascript/concepts/promises
 
-Pluralsight: JavaScript Promises and Async Programming:
-https://app.pluralsight.com/library/courses/javascript-promises-async-programming/table-of-contents
-
-8. Async Await and Promises:
+7. Async Await and Promises:
    Exercism: https://exercism.org/tracks/javascript/concepts/array-analysis
    MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#instance_methods
 
-The Complete JS Course 2021 -> S16: Asynchronous JS: Promises, Async/Await and AJAX.
-Is this a good resource?
+Pluralsight: JavaScript Promises and Async Programming:
+https://app.pluralsight.com/library/courses/javascript-promises-async-programming/table-of-contents
+Duration: 1h 21m | Released 26 Nov 2019.
+
+In 2020 - 2021 during The Complete JavaScript Course 2020 - Version 2, I have covered Promises, Async/Await. However, it is now Nov 2021 and I am using Pluralsign to refresh my memory on these Javascript concepts: https://github.com/VanessaTsang888/theCompleteJS-Course2020
+
+07-11-2021:
+continue from 1:25
