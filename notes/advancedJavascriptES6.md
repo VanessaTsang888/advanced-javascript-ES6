@@ -17,6 +17,8 @@ RESOURCES:
 2. Closures:
    Exercism: https://exercism.org/tracks/javascript/concepts/closures
    https://app.pluralsight.com/guides/javascript-closures
+   Advanced JavaScript: https://app.pluralsight.com/course-player?clipId=5abbc419-8e49-4070-8770-92c41b362778
+   -> Closure -> 46m 41s -> This course was released on 01-03-2018 which is prety old and I have checked this out with my Reviewer and been advised it is still worth doing.
 
 3. Destructuring:
    Guided Project on Coursera: Modern JavaScript: ES6 Basics

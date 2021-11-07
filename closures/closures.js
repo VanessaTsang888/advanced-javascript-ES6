@@ -1,6 +1,8 @@
 /* 
 
 2 - Closures:
+ In 2020 - 2021 during The Complete JavaScript Course 2020 - Version 2, I have covered Closures. However, it is now Nov 2021 and I am using Pluralsign to
+ refresh my memory on this Javascript concept.
 
 https://exercism.org/tracks/javascript/concepts/closures
 

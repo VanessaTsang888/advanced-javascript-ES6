@@ -17,14 +17,14 @@ new keyword.
 
 **/
 
-//Using an array literal to declare an array:
+/// Using an array literal to declare an array:
 // Define the name of the array, use a set of square brackets, inside type my comma-separated values.
 // Execute the code: top menu: Run -> Start Debugging
 const meal = ["Falafel", 2, ["1", 3], "Hummus", "Pita bread"];
 // Logout the meal variable to display my meal array:
 console.log(meal); // ['Falafel', 'Hummus', 'Pitta bread']
 
-// using an array constructor to declare an array:
+/// Using an array constructor to declare an array:
 const meal2 = new Array("Falafel", "Hummus");
 // Printout the meal2 array:
 console.log(meal2); // ["Falafel", "Hummus"]
@@ -38,14 +38,14 @@ const numbers = new Array(7);
 // console.log(numbers[0]); // undefined
 console.log(numbers); // Array(7) []
 
-// Using Array.from to declare an array:
+/// Using Array.from to declare an array:
 // Specify an array, like a collection inside the parenthises, i.e. another array.
 // Modify the values and specify a callback function using an arrow function. Iterate
 // every  and double it
 const numbers2 = Array.from([1, 2, 3], (num) => num * 2);
 console.log(numbers2); // Array(3) [1, 2, 3]
 
-// Using the Array.of method to declare an array:
+/// Using the Array.of method to declare an array:
 // We don't need the square brackets, just input the values we want separaged with commas.
 const numbers3 = Array.of(1, 2, 3, 4, 5);
 console.log(numbers3); // [ 1, 2, 3, 4, 5 ]
